@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import { Lesson12, Lesson3 } from './containers';
+import { Lesson12, Lesson3, Lesson4 } from './containers';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 
 ReactDOM.render(
@@ -22,10 +22,14 @@ ReactDOM.render(
           <Link to="/3">
             <div className="btn">Bài 3 </div>
           </Link>
+          <Link to="/4">
+            <div className="btn">Bài 4 </div>
+          </Link>
         </div>
         <Switch>
           <Route exact path="/" component={Lesson12} />
           <Route path="/3" component={Lesson3} />
+          <Route path="/4" component={Lesson4} />
         </Switch>
       </Router>
     </App>
